@@ -5,28 +5,28 @@ window.addEventListener('load', () => {
 
         if (target.name === 'edit') {
 
-            // let text = document.createTextNode('Edit CD: ' + target.parentElement.previousElementSibling.previousElementSibling.textContent);
-            // let info = document.getElementById("info");
-            //
-            // if (info.firstChild !== null) {
-            //   info.replaceChild(text, info.firstChild);
-            // } else {
-            //   info.appendChild(text);
-            // }
-            // let form = document.getElementById('edit');
-            //
-            // form.firstElementChild.nextElementSibling.value =
-            //     target.parentElement.parentElement.firstElementChild.textContent;//id
-            //
-            // form.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.value =
-            //     target.parentElement.previousElementSibling.previousElementSibling.textContent;//name
-            //
-            // form.lastElementChild.previousElementSibling.previousElementSibling.firstElementChild.value =
-            //     target.parentElement.previousElementSibling.textContent;//singer
-            //
-            // animate('button', 0, 'none');
-            // animate('table', 0, 'none');
-            // animate('edit', 1, 'block');
+            let text = document.createTextNode('Редактирование преподавателя: ' + target.parentElement.parentElement.firstElementChild.nextElementSibling.textContent);///name
+            let info = document.getElementById("info");
+
+            if (info.firstChild !== null) {
+                info.replaceChild(text, info.firstChild);
+            } else {
+                info.appendChild(text);
+            }
+            let form = document.getElementById('edit');
+
+            form.firstElementChild.nextElementSibling.value =
+                target.parentElement.parentElement.firstElementChild.textContent;//id
+
+
+                    document.getElementById("nameF").value =target.parentElement.parentElement
+                        .firstElementChild.nextElementSibling.textContent;//name
+
+                        document.getElementById("phoneF").value =target.parentElement.parentElement
+                            .firstElementChild.nextElementSibling.nextElementSibling.textContent;//phone
+
+                            animate('table', 0, 'none');
+            animate('edit', 1, 'block');
 
         } else if (target.name === 'delete') {
 

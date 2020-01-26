@@ -82,12 +82,13 @@
 </table>
 
 <form class="mui-form padding" id="edit" action="<%=request.getContextPath()%>/edit_teacher" method="post">
-    <legend id="info"></legend>
+    <legend class="center" id="info"></legend>
     <input type="hidden" name="id">
     <%@include file="../template/form.jsp" %>
+    <div id="content-wrapper" class="mui--text-center">
     <button type="button" class="mui-btn mui-btn--flat mui-btn--danger"
-            onclick="location.href='<%=request.getContextPath()%>/index'">cancel
-    </button>
+            onclick="location.href='<%=request.getContextPath()%>/teachers'">cancel
+    </button></div>
 </form>
 
 <form id="delete" action="<%=request.getContextPath()%>/delete_teacher" method="post">

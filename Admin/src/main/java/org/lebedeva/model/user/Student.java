@@ -18,6 +18,6 @@ public class Student extends User {
     @Builder
     public Student(Integer id, @NonNull String login, @NonNull String password, @NonNull String name, String phone) {
         super(id, login, password, name, phone, Collections.singletonList(Roles.STUDENT.toString()));
-        this.groups = new ArrayList<>();
+        this.groups = new ArrayList<>();//TODO нужны роли для Student??
     }
 }

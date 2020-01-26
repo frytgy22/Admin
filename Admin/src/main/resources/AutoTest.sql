@@ -145,6 +145,11 @@ CREATE TABLE IF NOT EXISTS `RolesTeachers` (
   KEY `fk2_roles_teachers` (`teacherID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `RolesTeachers`
+--
+
+/*INSERT INTO RolesTeachers(`roleID`,`teacherID`) VALUES(2,1),(2,3),(2,1)*/
 -- --------------------------------------------------------
 
 --
@@ -192,6 +197,11 @@ CREATE TABLE IF NOT EXISTS `Teachers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Dumping data for table `Teachers`
+--
+INSERT INTO Teachers(`login`, `password`, `name`, `phone`)
+VALUES("test@1","123","test1","12456"),("test@2","123","test2","12456"),("test@3","123","test2","12456");
+--
 -- Constraints for dumped tables
 --
 
@@ -199,36 +209,36 @@ CREATE TABLE IF NOT EXISTS `Teachers` (
 -- Constraints for table `GroupsStudents`
 --
 ALTER TABLE `GroupsStudents`
-  ADD CONSTRAINT `fk1_groups_students` FOREIGN KEY (`groupID`) REFERENCES `Groups` (`groupID`) ON DELETE CASCADE;,
-  ADD CONSTRAINT `fk2_groups_students` FOREIGN KEY (`studentID`) REFERENCES `Students` (`studentID`) ON DELETE CASCADE;;
+  ADD CONSTRAINT `fk1_groups_students` FOREIGN KEY (`groupID`) REFERENCES `Groups` (`groupID`) ON DELETE CASCADE,
+  ADD CONSTRAINT `fk2_groups_students` FOREIGN KEY (`studentID`) REFERENCES `Students` (`studentID`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `GroupsSubjects`
 --
 ALTER TABLE `GroupsSubjects`
-  ADD CONSTRAINT `fk1_groups_subjects` FOREIGN KEY (`groupID`) REFERENCES `Groups` (`groupID`) ON DELETE CASCADE;,
-  ADD CONSTRAINT `fk2_groups_subjects` FOREIGN KEY (`subjectID`) REFERENCES `Subjects` (`subjectID`) ON DELETE CASCADE;;
+  ADD CONSTRAINT `fk1_groups_subjects` FOREIGN KEY (`groupID`) REFERENCES `Groups` (`groupID`) ON DELETE CASCADE,
+  ADD CONSTRAINT `fk2_groups_subjects` FOREIGN KEY (`subjectID`) REFERENCES `Subjects` (`subjectID`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `GroupsTeachers`
 --
 ALTER TABLE `GroupsTeachers`
-  ADD CONSTRAINT `fk1_groups_teachers` FOREIGN KEY (`groupID`) REFERENCES `Groups` (`groupID`) ON DELETE CASCADE;,
-  ADD CONSTRAINT `fk2_groups_teachers` FOREIGN KEY (`teacherID`) REFERENCES `Teachers` (`teacherID`) ON DELETE CASCADE;;
+  ADD CONSTRAINT `fk1_groups_teachers` FOREIGN KEY (`groupID`) REFERENCES `Groups` (`groupID`) ON DELETE CASCADE,
+  ADD CONSTRAINT `fk2_groups_teachers` FOREIGN KEY (`teacherID`) REFERENCES `Teachers` (`teacherID`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `RolesAdmins`
 --
 ALTER TABLE `RolesAdmins`
-  ADD CONSTRAINT `fk1_roles_admins` FOREIGN KEY (`roleID`) REFERENCES `Roles` (`roleID`) ON DELETE CASCADE;,
-  ADD CONSTRAINT `fk2_roles_admins` FOREIGN KEY (`adminID`) REFERENCES `Admins` (`adminID`) ON DELETE CASCADE;;
+  ADD CONSTRAINT `fk1_roles_admins` FOREIGN KEY (`roleID`) REFERENCES `Roles` (`roleID`) ON DELETE CASCADE,
+  ADD CONSTRAINT `fk2_roles_admins` FOREIGN KEY (`adminID`) REFERENCES `Admins` (`adminID`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `RolesTeachers`
 --
 ALTER TABLE `RolesTeachers`
-  ADD CONSTRAINT `fk1_roles_teachers` FOREIGN KEY (`roleID`) REFERENCES `Roles` (`roleID`) ON DELETE CASCADE;,
-  ADD CONSTRAINT `fk2_roles_teachers` FOREIGN KEY (`teacherID`) REFERENCES `Teachers` (`teacherID`) ON DELETE CASCADE;;
+  ADD CONSTRAINT `fk1_roles_teachers` FOREIGN KEY (`roleID`) REFERENCES `Roles` (`roleID`) ON DELETE CASCADE,
+  ADD CONSTRAINT `fk2_roles_teachers` FOREIGN KEY (`teacherID`) REFERENCES `Teachers` (`teacherID`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `Students`

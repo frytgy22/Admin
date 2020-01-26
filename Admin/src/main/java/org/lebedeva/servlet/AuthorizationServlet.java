@@ -34,6 +34,8 @@ public class AuthorizationServlet extends HttpServlet {
                     final String LOGIN = req.getParameter("login");
                     final String PASSWORD = req.getParameter("password");
 
+                    //TODO если права админа могут быть у преподавателя и админа, искать в 2-х таблицах??
+
                     if (adminDao.findAll().stream()
                             .anyMatch(admin -> LOGIN.equals(admin.getLogin()) && PASSWORD.equals(admin.getPassword())
                                     && adminDao.getRoles(admin.getId()).contains("ADMIN")) ||
@@ -42,7 +44,7 @@ public class AuthorizationServlet extends HttpServlet {
                                             && teacherDao.getRoles(teacher.getId()).contains("ADMIN"))) {
                         resp.sendRedirect(req.getContextPath() + "/main");
                     } else {
-                        resp.getWriter().write("no");
+                        resp.getWriter().write("Wrong login or password");
                     }
                 } else {
                     resp.getWriter().write("Wrong data: empty field");
