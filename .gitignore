@@ -150,5 +150,4 @@ fabric.properties
 .project
 .settings/
 
-.vscode
-
+target
