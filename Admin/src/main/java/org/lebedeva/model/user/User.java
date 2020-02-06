@@ -2,6 +2,7 @@ package org.lebedeva.model.user;
 
 import lombok.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -13,8 +14,8 @@ public abstract class User {
     private String login;
     @NonNull
     private String password;
-    @NonNull
     private String name;
     private String phone;
+    private LocalDateTime registrationDate;
     private List<String> roles;//TODO fix just setter
 }

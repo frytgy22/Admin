@@ -192,3 +192,12 @@ buttons {
 #edit {
     display: none;
 }
+.h5{
+    font-weight: bolder;
+    color: #2196F3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.head{
+    padding-top: 15px;
+}

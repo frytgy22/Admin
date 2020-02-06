@@ -65,81 +65,6 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/teacher" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Tomcat 7.0.56" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.56" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="Admin:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Admin_2" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="33443" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Admin:war exploded" />
-        </option>
-      </method>
-    </configuration>
-  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -181,6 +106,9 @@
       <workItem from="1580040545310" duration="11142000" />
       <workItem from="1580052411622" duration="17124000" />
       <workItem from="1580070280146" duration="7366000" />
+      <workItem from="1580934945164" duration="3443000" />
+      <workItem from="1580973450154" duration="16780000" />
+      <workItem from="1580995415773" duration="8869000" />
     </task>
     <servers />
   </component>
@@ -188,34 +116,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="418" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580047830987">
+    <state x="418" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580984047724">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="418" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1580047830987" />
-    <state x="1310" y="245" width="374" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1580068734462">
+    <state x="418" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1580984047724" />
+    <state x="1310" y="245" width="374" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1580995835161">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="1310" y="245" width="374" height="583" key="#com.intellij.ide.util.MemberChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1580068734462" />
+    <state x="1310" y="245" width="374" height="583" key="#com.intellij.ide.util.MemberChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1580995835161" />
     <state x="588" y="34" width="734" height="1046" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579953421136">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="588" y="34" width="734" height="1046" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1579953421136" />
-    <state width="1874" height="272" key="GridCell.Tab.0.bottom" timestamp="1580080675822">
+    <state width="1206" height="176" key="GridCell.Tab.0.bottom" timestamp="1581007366682">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1580080675822" />
-    <state width="1874" height="272" key="GridCell.Tab.0.center" timestamp="1580080675821">
+    <state width="1206" height="176" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1581007366682" />
+    <state width="1206" height="176" key="GridCell.Tab.0.center" timestamp="1581007366680">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1580080675821" />
-    <state width="1874" height="272" key="GridCell.Tab.0.left" timestamp="1580080675820">
+    <state width="1206" height="176" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1581007366680" />
+    <state width="1206" height="176" key="GridCell.Tab.0.left" timestamp="1581007366679">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1580080675820" />
-    <state width="1874" height="272" key="GridCell.Tab.0.right" timestamp="1580080675821">
+    <state width="1206" height="176" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1581007366679" />
+    <state width="1206" height="176" key="GridCell.Tab.0.right" timestamp="1581007366681">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1580080675821" />
+    <state width="1206" height="176" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1581007366681" />
     <state width="1291" height="273" key="GridCell.Tab.1.bottom" timestamp="1580049773537">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>

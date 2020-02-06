@@ -17,7 +17,7 @@ public class DeleteTeacherServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.sendRedirect(req.getContextPath() + "/");
+        req.getRequestDispatcher("WEB-INF/jsp/teacher/teachers.jsp").forward(req, resp);
     }
 
     @Override

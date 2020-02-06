@@ -1,4 +1,4 @@
-package org.lebedeva.service;
+package org.lebedeva.filter;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;

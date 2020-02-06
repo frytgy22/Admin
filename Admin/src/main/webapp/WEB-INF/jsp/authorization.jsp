@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//cdn.muicss.com/mui-0.10.0/css/mui.min.css" rel="stylesheet" type="text/css"/>
     <script src="//cdn.muicss.com/mui-0.10.0/js/mui.min.js"></script>
-    <link href="<%=request.getContextPath()%>/static/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <header class="mui-appbar mui--z1">
@@ -18,7 +18,9 @@
                 <td class="mui--text-title">Admin</td>
                 <td class="mui--text-right">
                     <ul class="mui-list--inline mui--text-body2">
-                        <li><a href="<%=request.getContextPath()%>/">Home</a></li>
+                        <li>
+                            <img src="static/images/icon/1.png" alt="logo">
+                        </li>
                     </ul>
                 </td>
             </tr>
@@ -26,7 +28,7 @@
     </div>
 </header>
 
-<form class="mui-form padding top" action="<%=request.getContextPath()%>/" method="post">
+<form class="mui-form padding top" action="${pageContext.request.contextPath}/" method="post">
     <legend class="mui--text-center">Login</legend>
     <div class="mui-textfield">
         <input autofocus required name="login" maxlength="20"><label>Login</label>

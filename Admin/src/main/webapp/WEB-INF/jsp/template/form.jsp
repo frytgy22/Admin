@@ -28,7 +28,7 @@
 </div>
 <%--TODO save role in db--%>
 
-<div id="content-wrapper" class="mui--text-center">
+<div class="center">
     <button id="button" type="submit" class="mui-btn mui-btn--raised">Submit</button>
 </div>
 

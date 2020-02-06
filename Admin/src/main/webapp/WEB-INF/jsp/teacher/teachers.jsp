@@ -9,7 +9,7 @@
 
 <%@include file="../template/head.jsp" %>
 
-<script src="<%=request.getContextPath()%>../static/js/main.js"></script>
+<script src="static/js/main.js"></script>
 
 <table id="table" class="mui-table mui-table--bordered padding top">
     <thead>
@@ -81,17 +81,17 @@
     </tbody>
 </table>
 
-<form class="mui-form padding" id="edit" action="<%=request.getContextPath()%>/edit_teacher" method="post">
+<form class="mui-form padding" id="edit" action="${pageContext.request.contextPath}/edit_teacher" method="post">
     <legend class="center" id="info"></legend>
     <input type="hidden" name="id">
     <%@include file="../template/form.jsp" %>
     <div id="content-wrapper" class="mui--text-center">
     <button type="button" class="mui-btn mui-btn--flat mui-btn--danger"
-            onclick="location.href='<%=request.getContextPath()%>/teachers'">cancel
+            onclick="location.href='${pageContext.request.contextPath}/teachers'">cancel
     </button></div>
 </form>
 
-<form id="delete" action="<%=request.getContextPath()%>/delete_teacher" method="post">
+<form id="delete" action="${pageContext.request.contextPath}/delete_teacher" method="post">
     <input type="hidden" name="id">
 </form>
 

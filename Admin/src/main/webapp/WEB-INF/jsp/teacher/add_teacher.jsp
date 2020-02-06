@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="../template/head.jsp" %>
 
-<form class="mui-form padding top" action="<%=request.getContextPath()%>/add_teacher" method="post">
+<form class="mui-form padding top" action="${pageContext.request.contextPath}/add_teacher" method="post">
     <legend class="center">Add teacher</legend>
     <div class="mui-textfield">
         <input type="email" autofocus required name="login" maxlength="20"><label>Login</label>
@@ -28,10 +28,9 @@
     </div>
     <%--TODO save role in db--%>
 
-    <div id="content-wrapper" class="mui--text-center">
+    <div class="center">
         <button id="button" type="submit" class="mui-btn mui-btn--raised">Submit</button>
     </div>
-    <%--            TODO fix button move--%>
 </form>
 </div>
 </div>
